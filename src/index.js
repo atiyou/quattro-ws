@@ -1,9 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import Header from './App';
+import Footer from './Footer';
 import './index.css';
 
+function App() {
+	return (
+		<div>
+			<Header />
+			<Footer />
+		</div>
+	);
+}
+
 ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+	<App />,
+	document.getElementById('root')
 );
+
+

@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './App';
+import Header from './Header';
 import Navigation from './Navigation';
 import Article from './Article';
 import Footer from './Footer';
 import './index.css';
+
+console.log('Hello World!');
 
 function App() {
 	return (

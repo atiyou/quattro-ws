@@ -4,7 +4,7 @@ import Clock from './Clock';
 import './flexbox.css';
 
 const headerElement = (
-    <div id="headerlement">      
+    <div id="headerlement">
         <header>
             <h1>Youssef ATIK</h1>
             <h1>Software Architect</h1>

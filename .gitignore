@@ -3,6 +3,9 @@
 # dependencies
 /node_modules
 
+# output build
+/src/client/public
+
 # testing
 /coverage
 

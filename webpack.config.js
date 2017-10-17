@@ -15,6 +15,12 @@ var config = {
   	rules: [
   	  { test: /\.txt$/, use: 'raw-loader'},
   	  {
+  	  	test: /\.(ico|svg)$/, 
+  	  	include: APP_DIR,
+  	  	exclude: /node_modules/,
+  	  	use: 'file-loader'
+  	  },
+  	  {
   	  	test: /\.(js|jsx)$/, 
   	  	include: APP_DIR,
   	  	exclude: /node_modules/,
@@ -25,7 +31,11 @@ var config = {
   },
   plugins: [
   	  new webpack.optimize.UglifyJsPlugin(),
-  	  new HtmlWebpackPlugin({template: './src/client/index.html'})
+  	  new HtmlWebpackPlugin({
+  	  	title: 'My Web Site',
+  	  	favicon: './src/client/favicon.ico',
+  	  	template: './src/client/index.html'
+  	  })
   ]
 
 };
